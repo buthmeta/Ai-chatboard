@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Chatbot</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+      #chat-box {
+        border: 1px solid #ccc;
+        padding: 10px;
+        height: 300px;
+        overflow-y: scroll;
+      }
+      .user,
+      .bot {
+        margin: 10px 0;
+      }
+      .user {
+        text-align: right;
+        color: blue;
+      }
+      .bot {
+        text-align: left;
+        color: green;
+      }
+
+      #user-input {
+        width: 300px;
+        padding: 10px;
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        background: rgba(0, 0, 0, 0.3);
+        color: black;
+      }
+
+      .parent_user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin-top: 20px;
+        background: #da1919;
+        cursor: pointer;
+        outline: none;
+        color: white;
+        border-radius: 5px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AI Chatbot</h1>
+
+    <div id="chat-box"></div>
+
+    <div class="parent_user">
+      <input type="text" id="user-input" placeholder="សួរសំណួរនៅទីនេះ..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="chatbot.js"></script>
+  </body>
+</html>
