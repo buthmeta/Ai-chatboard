@@ -21,7 +21,7 @@
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
         'Content-Type: application/json',
         'Authorization: Bearer ' . $api_key,
-        'HTTP-Referer: http://localhost',
+        'HTTP-Referer: https://ai-chatboard.onrender.com/',
         'X-Title: MyChatbot',
     ]);
 
