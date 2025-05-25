@@ -1,10 +1,13 @@
 FROM php:8.2-apache
 
-# Enable Apache mod_rewrite
+# Enable Apache rewrite mod
 RUN a2enmod rewrite
 
-# Copy files to Apache server
+# Copy all files into Apache web root
 COPY . /var/www/html/
 
 # Set working directory
 WORKDIR /var/www/html/
+
+# Expose port
+EXPOSE 80
