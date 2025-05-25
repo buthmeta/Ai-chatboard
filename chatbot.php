@@ -1,5 +1,5 @@
 <?php
-    $api_key = "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";
+    $api_key = "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";
 
     $user_input = $_POST['message'] ?? '';
     if (!$user_input) {
